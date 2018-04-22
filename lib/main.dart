@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './random_words/random_words_app.dart';
+import './app_menu.dart';
+
 
 void main() => runApp(new App());
 
@@ -15,28 +16,5 @@ class App extends StatelessWidget {
         home: new Scaffold(
             appBar: new AppBar(title: new Text("Addin's Flutter Showcase")),
             body: new AppMenu()));
-  }
-}
-
-class AppMenu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new ListView(
-      padding: const EdgeInsets.all(16.0),
-      children: <Widget>[
-        new InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              new MaterialPageRoute(builder: (context) => new RandomWordsApp()),
-            );
-          },
-          child: new ListTile(
-            leading: new Icon(Icons.translate),
-            title: new Text('Random Words'),
-          ),
-        )
-      ],
-    );
   }
 }

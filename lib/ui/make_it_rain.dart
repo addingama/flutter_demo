@@ -53,8 +53,8 @@ class MakeItRainState extends State<MakeItRain> {
                 '\$$_moneyCounter',
                 style: new TextStyle(
                     fontSize: 46.9,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.lightGreen),
+                    fontWeight: _moneyCounter >= 10000 ? FontWeight.w900 : FontWeight.w800,
+                    color: _moneyCounter >= 10000 ? Colors.red : Colors.lightGreen),
               ),
             )),
             new Expanded(

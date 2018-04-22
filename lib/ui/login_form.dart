@@ -66,8 +66,10 @@ class LoginFormState extends State<LoginForm> {
                   new Padding(padding: new EdgeInsets.all(10.5)),
                   new TextField(
                     controller: _passwordController,
+                    obscureText: true,
                     decoration: new InputDecoration(
-                        hintText: 'Password', icon: new Icon(Icons.lock)),
+                        hintText: 'Password',
+                        icon: new Icon(Icons.lock)),
                   ),
                   new Padding(padding: new EdgeInsets.all(20.5)),
                   new Center(

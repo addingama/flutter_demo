@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import './random_words/random_words_app.dart';
 import './ui/make_it_rain.dart';
+import './ui/login_form.dart';
 
 class AppMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new ListView(
-//      padding: const EdgeInsets.all(16.0),
       children: <Widget>[
         new InkWell(
           onTap: () {
@@ -32,6 +32,20 @@ class AppMenu extends StatelessWidget {
           child: new ListTile(
             trailing: new Icon(Icons.navigate_next),
             title: new Text('Make it rain'),
+            subtitle: new Text('Udemy course training'),
+          ),
+        ),
+        new Divider(),
+        new InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              new MaterialPageRoute(builder: (context) => new LoginForm()),
+            );
+          },
+          child: new ListTile(
+            trailing: new Icon(Icons.navigate_next),
+            title: new Text('Login Form'),
             subtitle: new Text('Udemy course training'),
           ),
         ),

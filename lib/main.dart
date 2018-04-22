@@ -10,6 +10,7 @@ class App extends StatelessWidget {
     return new MaterialApp(
         title: "Addin's Flutter Showcase",
         theme: new ThemeData(
+            primarySwatch: Colors.red,
             primaryColor: Colors.red,
             accentColor: Colors.redAccent,
             primaryColorDark: Colors.black),

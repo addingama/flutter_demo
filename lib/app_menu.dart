@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './random_words/random_words_app.dart';
 import './ui/make_it_rain.dart';
 import './ui/login_form.dart';
+import './ui/weigh_on_planet_x.dart';
 
 class AppMenu extends StatelessWidget {
   @override
@@ -46,6 +47,20 @@ class AppMenu extends StatelessWidget {
           child: new ListTile(
             trailing: new Icon(Icons.navigate_next),
             title: new Text('Login Form'),
+            subtitle: new Text('Udemy course training'),
+          ),
+        ),
+        new Divider(),
+        new InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              new MaterialPageRoute(builder: (context) => new WeighOnPlanetX()),
+            );
+          },
+          child: new ListTile(
+            trailing: new Icon(Icons.navigate_next),
+            title: new Text('Weight on Planet X'),
             subtitle: new Text('Udemy course training'),
           ),
         ),

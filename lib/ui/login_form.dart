@@ -42,7 +42,7 @@ class LoginFormState extends State<LoginForm> {
       ),
       body: new Container(
         alignment: Alignment.topCenter,
-        child: new Column(
+        child: new ListView(
           children: <Widget>[
             new Container(
               padding: EdgeInsets.all(40.0),
